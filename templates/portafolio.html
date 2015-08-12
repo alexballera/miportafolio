@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Alex Ballera Desarrollo Web, HTML, CSS, Ruby on Rails, Javascript, AngularJS">
     <title>Alex Ballera Desarrollador Web Knowmada</title>
+     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../static/style/normalize.css">
     <link rel="stylesheet" href="../static/style/style.css">
   </head>
@@ -15,7 +16,7 @@
             <a href="#yo" class="menu__lista--link">Yo</a>
           </li>
           <li class="menu__lista--item">
-            <a href="#perfil" class="menu__lista--link">Perfil</a>
+            <a class="menu__lista--link" href="#perfil">Perfil</a>
           </li>
           <li class="menu__lista--item">
             <a href="#trabajo" class="menu__lista--link">Trabajo</a>
@@ -26,8 +27,8 @@
         </ul>
       </nav>
       <figure class="avatar">
-        <img src="../static/images/avatar.jpg" alt="Avatar" />
-        <figcaption><a href="http://twitter.com/AlexBallera" target="_blank">@AlexBallera</a></figcaption>
+        <img class="avatar__image" src="../static/images/mi_foto_cuadrada.jpg" alt="Avatar" />
+        <figcaption class="avatar__descripcion"><a class="avatar__link" href="http://twitter.com/AlexBallera" target="_blank">@AlexBallera</a></figcaption>
         <p class="avatar__nombre">Alex Ballera</p>
       </figure>
     </header>
@@ -43,38 +44,52 @@
     </section>
     <section id="trabajo" class="trabajo">
       <h2 class="trabajo__titulo u-titulo">Mi Trabajo</h2>
-      <article class="trabajo__referencia"> 
-        <figure class="trabajo__item">
-          <img src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" class="trabajo__imagen">
+      <article class="trabajo__item"> 
+        <figure class="trabajo__contenedor--imagen">
+          <img class="trabajo__imagen" src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" >
           <figcaption class="trabajo__imagen--descripcion">Website de mejorando.la</figcaption>
         </figure>
       </article>
-      <article class="trabajo__referencia">
-        <figure class="trabajo__item">
-          <img src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" class="trabajo__imagen">
+      <article class="trabajo__item"> 
+        <figure class="trabajo__contenedor--imagen">
+          <img class="trabajo__imagen" src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" >
           <figcaption class="trabajo__imagen--descripcion">Website de mejorando.la</figcaption>
         </figure>
       </article>
-      <article class="trabajo__referencia">
-        <figure class="trabajo__item">
-          <img src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" class="trabajo__imagen">
+      <article class="trabajo__item"> 
+        <figure class="trabajo__contenedor--imagen">
+          <img class="trabajo__imagen" src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" >
           <figcaption class="trabajo__imagen--descripcion">Website de mejorando.la</figcaption>
         </figure>
       </article>
-      <article class="trabajo__referencia">
-        <figure class="trabajo__item">
-          <img src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" class="trabajo__imagen">
+      <article class="trabajo__item"> 
+        <figure class="trabajo__contenedor--imagen">
+          <img class="trabajo__imagen" src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" >
           <figcaption class="trabajo__imagen--descripcion">Website de mejorando.la</figcaption>
         </figure>
-      </article>      
+      </article>
+      <article class="trabajo__item"> 
+        <figure class="trabajo__contenedor--imagen">
+          <img class="trabajo__imagen" src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" >
+          <figcaption class="trabajo__imagen--descripcion">Website de mejorando.la</figcaption>
+        </figure>
+      </article>
+      <article class="trabajo__item"> 
+        <figure class="trabajo__contenedor--imagen">
+          <img class="trabajo__imagen" src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" >
+          <figcaption class="trabajo__imagen--descripcion">Website de mejorando.la</figcaption>
+        </figure>
+      </article>   
     </section>
     <footer id="contacto" class="contacto">
-      <h3 class="contacto__titulo">Contacto</h3>
-      <p class="contacto__descripcion">Si tienes una sugerencia o quieres trabajar conmigo, contactame:</p>
+      <div class="contacto__izquierdo">
+        <h3 class="contacto__titulo">Contacto</h3>
+        <p class="contacto__descripcion">Si tienes una sugerencia o quieres trabajar conmigo, contactame:</p>        
+      </div>
       <form class="contacto__formato">
         <input class="contacto__formato--input" type="text" placeholder="Nombre"/>
         <input class="contacto__formato--input" type="email" placeholder="Email"/>
-        <textarea class="contacto__formato--textarea" name="" id="" cols="30" rows="10" placeholder="Motivo"></textarea>
+        <textarea class="contacto__formato--textarea" placeholder="Motivo"></textarea>
         <button class="contacto__boton" type="submit">Contactame</button>
       </form>
     </footer>

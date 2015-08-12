@@ -1,37 +1,160 @@
 @import "normalize.css";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
-html, 
-body, 
-article, 
-figure, 
-div, 
-img, 
-p, 
-a, 
-hgroup
+.u-titulo
+{
+  color: #00ccff;
+  border-bottom: 2px dashed #00ccff;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: .5em;
+}
+.header
+{
+  margin-top: 3.75em;
+  background-image: url('../images/portada.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 1em 0;
+}
+  .menu
+  {
+    background: #1e1e1e;
+    text-align: center;
+    height: 3.75em;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0; 
+  }
+    .menu__lista
+    {
+      margin: 0;
+      padding: 0;
+    }
+      .menu__lista--item
+      {
+        display: inline-block;
+        color:     
+      }
+      .menu__lista--link 
+      {
+        color: #00dbff;
+        text-decoration: none;
+        line-height: 3.75em; /*alineacion vertical*/
+        margin-right: 1.5em;
+      }
+.avatar
 {
   margin: 0;
-  padding: 0;
-  font-size: 1em;
-  text-decoration: none;
 }
+  .avatar__image
+  {  
+    width: 8em;
+    border: 5px solid white;
+    border-radius: 50%;
+  }
+  .avatar__nombre,
+  .avatar__link
+  {
+    color: white;
+  }
+  .avatar__nombre
+  {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0;
+  }
 
-.u-titulo{
-  color: red;
+  .avatar__link
+  {
+    font-size: 2.2em;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+.perfil
+{
+  text-align: center;
 }
-
-.header{
-
+  .perfil__link
+  {
+    background: orange;
+    color: white;
+    text-decoration: none;
+    padding: .5em 1em;
+    border-radius: 2em;
+    margin-right: .5em;
+  }
+.trabajo
+{
+  margin-top: 2em;
+  text-align: center;
 }
-
-.avatar{
-
-}
-
-.perfil{
-
-}
-.trabajo{
-
-}
+  .trabajo__item
+  {
+    display: inline-block;
+    margin-right: 1.8em;
+    margin-bottom: 1.8em;
+  }
+  .trabajo__contenedor--imagen
+  {
+    margin: 0;
+  }
+  .trabajo__imagen--descripcion
+  {
+    font-size: 1.1em;
+    color: #515151;
+    font-style: italic;
+  }
 .contacto
+{
+  background-image: url(../images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2em 0;
+  text-align: center;
+}
+  .contacto__izquierdo
+  {
+    display: inline-block;
+    width: 32em;
+    text-align: center;
+    vertical-align: top;
+    margin-right: 2em;
+  }
+    .contacto__titulo
+    {
+      color: white;
+    }
+
+  .contacto__formato
+  {
+    text-align: center;
+    display: inline-block;
+  }
+    .contacto__formato--input,
+    .contacto__formato--textarea
+    {
+      background: white;
+      border: none;
+      display: block;
+      border-radius: 2em;
+      padding: .5em;
+      margin: 0 auto 1em auto;
+    }
+    .contacto__formato--textarea
+    {
+      resize: none;
+    }
+  .contacto__boton
+  {
+    background: orange;
+    color: white;
+    border-radius: 1em;
+    padding: .5em 1em;
+    border: none;
+  }
