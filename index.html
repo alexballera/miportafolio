@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Alex Ballera Desarrollo Web, HTML, CSS, Ruby on Rails, Javascript, AngularJS">
+    <title>Alex Ballera Desarrollador Web Knowmada</title>
+     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../static/style/normalize.css">
+    <link rel="stylesheet" href="../static/style/style.css">
+  </head>
+  <body>
+    <header id="yo" class="header">
+      <nav class="menu">
+        <ul class="menu__lista">
+          <li class="menu__lista--item">
+            <a href="#yo" class="menu__lista--link">Yo</a>
+          </li>
+          <li class="menu__lista--item">
+            <a class="menu__lista--link" href="#perfil">Perfil</a>
+          </li>
+          <li class="menu__lista--item">
+            <a href="#trabajo" class="menu__lista--link">Trabajo</a>
+          </li>
+          <li class="menu__lista--item">
+            <a href="#contacto" class="menu__lista--link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <figure class="avatar">
+        <img class="avatar__image" src="../static/images/mi_foto_cuadrada.jpg" alt="Avatar" />
+        <figcaption class="avatar__descripcion"><a class="avatar__link" href="http://twitter.com/AlexBallera" target="_blank">@AlexBallera</a></figcaption>
+        <p class="avatar__nombre">Alex Ballera</p>
+      </figure>
+    </header>
+    <section id="perfil" class="perfil">
+      <h2 class="perfil__titulo u-titulo">Mi Perfil</h2>
+      <p class="perfil__descripcion">
+        Hola! si llegaste hasta aqui puedes ver mi portafolio y contactame
+      </p>
+      <a href="https://twitter.com/AlexBallera" target="_blank" class="perfil__link">Twitter</a>
+      <a href="https://www.facebook.com/AlexBallera.Net" target="_blank" class="perfil__link">Facebook</a>
+      <a href="https://github.com/alexballera" target="_blank" class="perfil__link">Github</a>
+      <a href="https://plus.google.com/+AlexanderBalleraLugo/posts" target="_blank" class="perfil__link">Google+</a>
+    </section>
+    <section id="trabajo" class="trabajo">
+      <h2 class="trabajo__titulo u-titulo">Mi Trabajo</h2>
+      <article class="trabajo__item"> 
+        <figure class="trabajo__contenedor--imagen">
+          <img class="trabajo__imagen" src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" >
+          <figcaption class="trabajo__imagen--descripcion">Website de mejorando.la</figcaption>
+        </figure>
+      </article>
+      <article class="trabajo__item"> 
+        <figure class="trabajo__contenedor--imagen">
+          <img class="trabajo__imagen" src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" >
+          <figcaption class="trabajo__imagen--descripcion">Website de mejorando.la</figcaption>
+        </figure>
+      </article>
+      <article class="trabajo__item"> 
+        <figure class="trabajo__contenedor--imagen">
+          <img class="trabajo__imagen" src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" >
+          <figcaption class="trabajo__imagen--descripcion">Website de mejorando.la</figcaption>
+        </figure>
+      </article>
+      <article class="trabajo__item"> 
+        <figure class="trabajo__contenedor--imagen">
+          <img class="trabajo__imagen" src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" >
+          <figcaption class="trabajo__imagen--descripcion">Website de mejorando.la</figcaption>
+        </figure>
+      </article>
+      <article class="trabajo__item"> 
+        <figure class="trabajo__contenedor--imagen">
+          <img class="trabajo__imagen" src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" >
+          <figcaption class="trabajo__imagen--descripcion">Website de mejorando.la</figcaption>
+        </figure>
+      </article>
+      <article class="trabajo__item"> 
+        <figure class="trabajo__contenedor--imagen">
+          <img class="trabajo__imagen" src="../static/images/thumb1.jpg" alt="Esta es la descripcion de la imagen" >
+          <figcaption class="trabajo__imagen--descripcion">Website de mejorando.la</figcaption>
+        </figure>
+      </article>   
+    </section>
+    <footer id="contacto" class="contacto">
+      <div class="contacto__izquierdo">
+        <h3 class="contacto__titulo">Contacto</h3>
+        <p class="contacto__descripcion">Si tienes una sugerencia o quieres trabajar conmigo, contactame:</p>        
+      </div>
+      <form class="contacto__formato">
+        <input class="contacto__formato--input" type="text" placeholder="Nombre"/>
+        <input class="contacto__formato--input" type="email" placeholder="Email"/>
+        <textarea class="contacto__formato--textarea" placeholder="Motivo"></textarea>
+        <button class="contacto__boton" type="submit">Contactame</button>
+      </form>
+    </footer>
+  </body>
+</html>
